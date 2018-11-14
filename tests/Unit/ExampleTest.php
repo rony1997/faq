@@ -12,8 +12,17 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
+
+        public function testSave()
     {
-        $this->assertTrue(true);
+        $user = $user = factory(\App\User::class)->make();
+        $user->save();
+        $question = factory(\App\Question::class)->make();
+        $question->user()->associate($user);
+        $question->save();
+        $answer = factory(\App\Answer::class)->make();
+        $answer->user()->associate($user);
+        $answer->question()->associate($question);
+        $this->assertTrue($answer->save());
     }
 }
