@@ -13,9 +13,9 @@
                         <table class="table">
                             <thead>
                             <tr>
-
+                                Number of Email id's Registered
                                 <th>Email</th>
-                                <th>Status</th>
+
                             </tr>
                             </thead>
                             <tbody>
@@ -23,17 +23,7 @@
                                 <tr>
 
                                     <td>{{$user->email}}</td>
-                                    <td>
-                                        @if($user->isOnline())
-                                            <li class="text-success">
-                                                Online
-                                            </li>
-                                        @else
-                                            <li class="text-muted">
-                                                Offline
-                                            </li>
-                                        @endif
-                                    </td>
+
                                 </tr>
                             @endforeach
                             </tbody>
