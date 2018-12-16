@@ -25,9 +25,9 @@ class RegisteruserTest extends DuskTestCase
                 ->assertSee('Home')
             ->ClickLink('My Account')
                 ->ClickLink('Create Profile')
-            ->type('fname','dhruvin')
-                ->type('lname','patel')
-                ->type('body','My name is rohan')
+            ->type('fname','newuser')
+                ->type('lname','newuser')
+                ->type('body','i am new user')
                 ->press('Save')
                 ->assertSee('Profile Created');
 
