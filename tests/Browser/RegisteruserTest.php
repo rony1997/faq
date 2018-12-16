@@ -18,11 +18,18 @@ class RegisteruserTest extends DuskTestCase
         $this->browse(function (Browser $browser) {
             $browser->visit('/register')
                 ->assertSee('Register')
-                ->type('email','rohan@abc.aaad')
+                ->type('email','rohan@abc.aaag')
                 ->type('password','abc123')
                 ->type('password_confirmation','abc123')
                 ->press('Register')
-                ->assertSee('Home');
+                ->assertSee('Home')
+            ->ClickLink('My Account')
+                ->ClickLink('Create Profile')
+            ->type('fname','dhruvin')
+                ->type('lname','patel')
+                ->type('body','My name is rohan')
+                ->press('Save')
+                ->assertSee('Profile Created');
 
         });
     }
