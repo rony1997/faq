@@ -12,7 +12,7 @@ When logged in as Admin, he/she can see the number of registered email
 id's of the user's whereas the user can create,update,delete the question 
 and answers. User can also edit his/her Profile.
 The admin can be logged in as user too by first logging in as user and then again by logging as
-an Admin. In this way he/she is logged in as user as well as admin and it can be seen in admin page
+an Admin. In this way he/she is logged in as user as well as admin and it can be seen in admin page.                                                                                               
 Email - rohan@gmail.abc                                                                                                           
 Password - password                                                                         
 By doing this no other user can register as admin and use his powers.                          
