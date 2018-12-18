@@ -13,7 +13,7 @@ id's of the user's whereas the user can create,update,delete the question
 and answers. User can also edit his/her Profile.
 The admin can be logged in as user too by first logging in as user and then again by logging as
 an Admin. In this way he/she is logged in as user as well as admin and it can be seen in admin page.                                                                                               
-Email - rohan@gmail.abc                                                                                                           
+Email - rohan@gmail.io                                                                                                          
 Password - password                                                                         
 By doing this no other user can register as admin and use his powers.                          
 Dusk Testing                                                                                  
@@ -29,7 +29,8 @@ Admins can see a list of registered users in the admin home page.
 Admin can see if he is logged in as user too or only as admin on his home page                             
 
 Dusk Testing                                                                                      
-User must be able to Register and Login as full Dusk testing is done without any errors.                     
+User must be able to Register and Login as full Dusk testing is done without any errors.    
+Admin must be able to Register and Login as full Dusk testing is done without any errors.                                      
 User must be able to Create and Edit Profile as full Dusk testing is done without any errors.                            
 User must be able to Create.Edit and Delete Questions as full Dusk testing is done without any errors.                            
 User must be able to Create.Edit and Delete Answers as full Dusk testing is done without any errors.                   
